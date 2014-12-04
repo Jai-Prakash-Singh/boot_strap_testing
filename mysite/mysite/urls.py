@@ -8,6 +8,7 @@ urlpatterns = patterns('',
      #url(r'^chats/', include('chat.urls')),
      url(r'^(/)?$', RedirectView.as_view(url='/polls/')),
      url(r'^polls/', include('polls.urls', namespace="polls")),
+     url(r'^bootprac/', include('bootstrappractice.urls', namespace="bootprac")),
      url(r'^admin/', include(admin.site.urls)),
 )
 
